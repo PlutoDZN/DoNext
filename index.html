@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>DoNext</title>
+  <div class="ad-box">
+  Werbung
+</div>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧠 DoNext</h1>
+
+<section>
+  <h2>Was soll ich heute tun?</h2>
+  <input id="zeit" type="number" placeholder="Zeit in Minuten">
+  <select id="energie">
+    <option value="low">Niedrig</option>
+    <option value="mid">Mittel</option>
+    <option value="high">Hoch</option>
+  </select>
+  <button onclick="tagesVorschlag()">Vorschlag</button>
+  <p id="vorschlag"></p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Entscheidungs-Helfer</h2>
+  <input id="optA" placeholder="Option A">
+  <input id="optB" placeholder="Option B">
+  <button onclick="entscheiden()">Entscheidung treffen</button>
+  <p id="entscheidung"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
